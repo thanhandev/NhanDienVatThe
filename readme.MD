@@ -1,7 +1,8 @@
 Tạo môi trường ảo:
 
-
+apt install python3.10-venv
 sudo pip3 install virtualenv
+ python3 -m venv tensorflow
 
 cd tensorflow
 
