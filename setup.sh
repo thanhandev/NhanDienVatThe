@@ -22,7 +22,7 @@ pip install tensorflow
 
 pip install matplotlib
 sudo apt-get install protobuf-compiler
-
+pip3 install pydub
 echo Prerequisites Downloaded Successfully
 
 #export PYTHONPATH=$PYTHONPATH:/home/pi/tensorflow/models/research:/home/pi/tensorflow/models/research/slim" >> ~/.bashrc
