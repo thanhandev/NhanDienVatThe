@@ -21,7 +21,8 @@ run bash add_model.sh
 Liên kết model:
 
 export PYTHONPATH=$PYTHONPATH:/home/pi/tensorflow/models/research:/home/pi/tensorflow/models/research/slim" >> ~/.bashrc
-
+OrangePi:
+export PYTHONPATH=$PYTHONPATH:/home/orangepi/tensorflow/models/research:/home/orangepi/tensorflow/models/research/slim" >> ~/.bashrc
 Tạo thư mục chứa model:
 mkdir od-models
 cd od-models
@@ -35,5 +36,8 @@ mv ssd_mobilenet_v2_320x320_coco17_tpu-8 my_mobilenet_model
 
 Về thư mục chính và thử nghiệm:
 cd ~/tensorflow
+Chuyển tài nguyên:
+mv /home/orangepi/tensorflow/mp3/* /home/orangepi/tensorflow/
+
 python3 main.py
 
