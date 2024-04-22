@@ -1,8 +1,10 @@
 Tạo môi trường ảo:
 
-apt install python3.10-venv
+sudo apt install python3.10-venv
+
 sudo pip3 install virtualenv
- python3 -m venv tensorflow
+
+python3 -m venv tensorflow
 
 cd tensorflow
 
@@ -22,21 +24,31 @@ Liên kết model:
 
 export PYTHONPATH=$PYTHONPATH:/home/pi/tensorflow/models/research:/home/pi/tensorflow/models/research/slim" >> ~/.bashrc
 OrangePi:
+
 export PYTHONPATH=$PYTHONPATH:/home/orangepi/tensorflow/models/research:/home/orangepi/tensorflow/models/research/slim" >> ~/.bashrc
+
 Tạo thư mục chứa model:
+
 mkdir od-models
+
 cd od-models
 
 Tải model:
+
 wget http://download.tensorflow.org/models/object_detection/tf2/20200711/ssd_mobilenet_v2_320x320_coco17_tpu-8.tar.gz
 
 Giải nén model:
+
 tar -xvf ssd_mobilenet_v2_320x320_coco17_tpu-8.tar.gz
+
 mv ssd_mobilenet_v2_320x320_coco17_tpu-8 my_mobilenet_model
 
 Về thư mục chính và thử nghiệm:
+
 cd ~/tensorflow
+
 Chuyển tài nguyên:
+
 mv /home/orangepi/tensorflow/mp3/* /home/orangepi/tensorflow/
 
 python3 main.py
