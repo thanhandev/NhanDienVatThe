@@ -22,10 +22,10 @@ run bash add_model.sh
 
 Liên kết model:
 
-export PYTHONPATH=$PYTHONPATH:/home/pi/tensorflow/models/research:/home/pi/tensorflow/models/research/slim" >> ~/.bashrc
+echo "export PYTHONPATH=$PYTHONPATH:/home/pi/tensorflow/models/research:/home/pi/tensorflow/models/research/slim" >> ~/.bashrc
 OrangePi:
 
-export PYTHONPATH=$PYTHONPATH:/home/orangepi/tensorflow/models/research:/home/orangepi/tensorflow/models/research/slim" >> ~/.bashrc
+echo "export PYTHONPATH=$PYTHONPATH:/home/orangepi/tensorflow/models/research:/home/orangepi/tensorflow/models/research/slim" >> ~/.bashrc
 
 Tạo thư mục chứa model:
 
